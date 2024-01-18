@@ -4,3 +4,9 @@
 
 # usefull resource
  https://www.zkteco.com/en/ZKAccess_3/ZKAccess3.5
+
+Make executable
+import certifi
+print(certifi.where())
+
+pyinstaller --hidden-import=requests --hidden-import=zk --add-data "C:\Users\rb\Documents\pontaje-sync-time-script-master\certifi\cacert.pem;." fetchUsers.py
